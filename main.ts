@@ -11,6 +11,9 @@ input.onButtonPressed(Button.A, function () {
     e = input.magneticForce(Dimension.X) / input.magneticForce(Dimension.Z)
     bluetooth.uartWriteValue("x/z : " + times, (a + (b + (c + (d + e)))) / 5)
 })
+input.onButtonPressed(Button.AB, function () {
+    times = 0
+})
 input.onButtonPressed(Button.B, function () {
     times += -1
 })
